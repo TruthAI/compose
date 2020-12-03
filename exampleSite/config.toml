@@ -20,12 +20,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     weight = 3
     url = "https://docs.neuralvibes.com"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.extensions]
-      typographer = false
+[markup.goldmark.extensions]
+typographer = false
+[markup.goldmark.renderer]
+unsafe = true
+
   [markup.highlight]
     codeFences = true
     guessSyntax = false
